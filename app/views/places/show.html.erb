@@ -2,17 +2,17 @@
 
 <h2>Activites conducted in <%= @places["name"] %>:</h2>
 
-<ul>
+<ol>
 
   <% for entry in @entries %>
     <li>
-      <p><%= entry["title"] %></p>
+      <p><b><%= entry["title"] %></b></p>
       <p><%= entry["posted_on"] %></p>
       <p><%= entry["description"] %></p>
     </li>
   <% end %>
 
-</ul>
+</ol>
 
 <p>
   <a href="/entries/new?place_id=<%= @places["id"] %>">Add activity</a>

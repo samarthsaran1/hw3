@@ -1,8 +1,7 @@
 <h1>Add Activity for <%= @place["name"]%></h1>
 
 <form action="/entries" method="post">
-  <p>
-
+  <h4>
     <label for="title">Activity Title</label>
     <input type="text" name="title">
 
@@ -12,11 +11,9 @@
     <label for="description">Description</label>
     <input type="text" name="description">
 
-
-  </p>
-
- <p>
     <input type="hidden" name="place_id" id="place_id" value="<%= params["place_id"]%>">
-  </p>
+  </h4>
+
   <button>Submit</button>
+
 </form>
